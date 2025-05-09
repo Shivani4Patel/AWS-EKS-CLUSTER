@@ -22,8 +22,7 @@ Another for EC2 nodes (worker nodes).
 
 ![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/c1i8kuyqmrpyj4sutvox.png)
 
-**
-3. Create the EKS Cluster**
+**3. Create the EKS Cluster**
 Navigate to the EKS dashboard and create a cluster.
 Assign the name and role to the cluster, and AWS will provision it automatically.
 Under network settings, select private subnets and keep other settings at default.
@@ -40,8 +39,7 @@ Once created, the EKS cluster will be running, and you can observe the creation 
 ![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ub7m24swnisg5if4fpf1.png)
 
 
-**
-4. Create a Node Group**
+**4. Create a Node Group**
 Create a node group for the cluster.
 Select the instance type (e.g., t2.micro) and configure the scaling parameters (e.g., desired size: 1, minimum size: 1, maximum size: 1).
 After successful creation, three worker pods will be available.
@@ -95,8 +93,7 @@ Copy the cluster URL for future use.
 ![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/frgb5o6psu0zisz219gu.png)
 
 
-**
-7. Configure IAM Identity Provider**
+**7. Configure IAM Identity Provider**
 Go to the IAM Identity Provider section in the AWS Management Console.
 Paste the cluster URL and set the audience to sts.amazon.com.
 
